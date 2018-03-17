@@ -10,4 +10,4 @@
      - Queue (implementation with arrays and linked lists in C)
 
   ## Algorithms
-     - Array left rotation (implementation in C#)
+     - Array rotation to left and right (implementation in C#)
