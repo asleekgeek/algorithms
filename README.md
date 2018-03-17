@@ -8,3 +8,6 @@
   ## Fundamental Data Structures
      - Stack (implementation with arrays and linked lists in C)
      - Queue (implementation with arrays and linked lists in C)
+
+  ## Algorithms
+     - Array left rotation (implementation in C#)
