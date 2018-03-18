@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+* 
+* Bojan Skrchevski 2018-03-17
+*
+* Implementation of array rotation to left and right
+*
+*
+*/
+
+
+using System;
 
 class ArrayRotation
 {
