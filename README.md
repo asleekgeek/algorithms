@@ -12,3 +12,4 @@
   ## Algorithms
      - Array rotation to left and right (implementation in C#)
      - 'Anagram' - Minimum number of character deletions required to make the two strings anagrams. (C#)
+     - Hash Tables: Ransom Note (implementation with Dictionary<K, T> in C#)
