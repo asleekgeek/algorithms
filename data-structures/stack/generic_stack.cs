@@ -1,7 +1,7 @@
 public class Node<T>
 {
     public T data;
-    public Node<T> node;
+    public Node<T> next;
 }
 
 public class Stack<T>
@@ -15,13 +15,13 @@ public class Stack<T>
             top = new Node<T> 
             {
                 data = data,
-                node = null
+                next = null
             }; 
         } else {
             var newElement = new Node<T>
             {
                 data = data,
-                node = top
+                next = top
             };
 
             top = newElement;
@@ -33,7 +33,7 @@ public class Stack<T>
         if(IsEmpty()) return default(T);
 
         var topValue = top.data;
-        top = top.node;
+        top = top.next;
 
         return topValue;
     }
