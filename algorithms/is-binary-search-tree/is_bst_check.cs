@@ -6,7 +6,7 @@
 * Given the root node of a binary tree, can we also determine if it is also a Binary Search Tree?
 *
 *
-* Originally posted on HAckerRank: https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem
+* Originally posted on HackerRank: https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem
 *
 *
 *
