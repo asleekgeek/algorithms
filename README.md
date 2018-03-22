@@ -16,3 +16,4 @@
      - Hash Tables: Ransom Note (implementation with Dictionary<K, T> in C#)
      - Balanced Brackets (implementation in C# using the custom Stack<T> from above)
      - Queue (implementation with two stacks in C#)
+     - Binary Search Tree - check if a binary tree is also a binary serach tree (implemented in C# using Binary Search Tree from above)
