@@ -19,3 +19,4 @@
      - Binary Search Tree - check if a binary tree is also a binary serach tree (implemented in C# using Binary Search Tree from above)
      - Prime numbers - basic algorithm for finding prime numbers (implementation in C#)
      - Merge Sort (implementation in C and C# (using List<T>))
+     - Quicksort (implementation in C# with List<int>)
