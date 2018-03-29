@@ -1,7 +1,9 @@
 
 \.vscode/
 
-*
+*.exe
+*.out
+
 !*.c
 !*.cs
 !Makefile
