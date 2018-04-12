@@ -8,10 +8,9 @@ public class Stack<T>
 {
     private Node<T> top = null;
 
-    public void Push(T data)
-    {
-        var newElement = new Node<T>
-        {
+    public void Push(T data) {
+    
+        var newElement = new Node<T> {
             data = data,
             next = top
         };
@@ -19,9 +18,9 @@ public class Stack<T>
         top = newElement;
     }
 
-    public T Pop()
-    {
-        if(IsEmpty()) return default(T);
+    public T Pop() {
+    
+        if(IsEmpty()) throw new StackEmptyException();
 
         var topValue = top.data;
         top = top.next;
@@ -29,15 +28,14 @@ public class Stack<T>
         return topValue;
     }
 
-    public T Peek()
-    {
+    public T Peek() {
+    
         if(IsEmpty()) throw new StackEmptyException();
 
         return top.data;
     }
 
-    public bool IsEmpty()
-    {
+    public bool IsEmpty() {
         return top == null;
     }
 }
