@@ -10,22 +10,13 @@ public class Stack<T>
 
     public void Push(T data)
     {
-        if(IsEmpty())
+        var newElement = new Node<T>
         {
-            top = new Node<T> 
-            {
-                data = data,
-                next = null
-            }; 
-        } else {
-            var newElement = new Node<T>
-            {
-                data = data,
-                next = top
-            };
+            data = data,
+            next = top
+        };
 
-            top = newElement;
-        }        
+        top = newElement;
     }
 
     public T Pop()
