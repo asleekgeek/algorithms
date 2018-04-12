@@ -1,3 +1,12 @@
+/*
+*
+* Implementation of a stack data structure in C
+* 
+* The idea with this implementation is to use void* 
+* so that we can push and pop any type on the stack
+*
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,12 +17,11 @@ typedef struct stack_node {
 
 StackNode *top = NULL;
 
-StackNode* new_stack_node(void *data) 
-{
+StackNode* new_stack_node(void *data) {
+	
 	StackNode *new_node = (StackNode*) malloc(sizeof(StackNode));
 
-	if (new_node == NULL) 
-	{
+	if (new_node == NULL) {
 		return NULL;
 	}
 
@@ -23,25 +31,23 @@ StackNode* new_stack_node(void *data)
 	return new_node;
 }
 
-int push(void *data) 
-{
+int push(void *data) {
+	
 	StackNode *new_node = new_stack_node(data);
 
-	if (new_node == NULL) 
-	{
+	if (new_node == NULL) {
 		return 0;
 	}
 
 	new_node -> next = top;
 	top = new_node;
-	
+
 	return 1;
 }
 
 void* pop() 
 {
-	if (top == NULL) 
-	{
+	if (top == NULL) {
 		return NULL;
 	}
 
@@ -54,13 +60,12 @@ void* pop()
 	return data;
 }
 
-void *peek() 
-{
-   return top->data;
+void *peek() {
+	return top -> data;
 }
 
-int main() 
-{
+int main() {
+	
 	int a = 1;
 	float b = 2.3;
 	char c[] = "Hi from the stack!";
@@ -84,8 +89,7 @@ int main()
 	int a_popped = *((int*) pop());
 	printf("%d\n", a_popped);
 
-	if (pop() == NULL) 
-	{
+	if (pop() == NULL) {
 		printf("Unable to pop from empty stack\n");
 	}
 
