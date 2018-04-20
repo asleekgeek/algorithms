@@ -12,8 +12,8 @@ using System.Linq;
 
 class Anagrams
 {
-    static void Main(String[] args)
-    {
+    static void Main(String[] args) {
+        
         string a = Console.ReadLine();
         string b = Console.ReadLine();
 
@@ -23,21 +23,20 @@ class Anagrams
         Console.ReadKey();
     }
 
-    private static int GetNumberOfDifferentCharacters(string a, string b)
-    {
+    private static int GetNumberOfDifferentCharacters(string a, string b) {
+        
         int[] freq = new int[26];
 
-        foreach (var c in a)
-        {
+        foreach (var c in a) {
             ++freq[c - 'a'];
         }
 
-        foreach (var c in b)
-        {
+        foreach (var c in b) {
             --freq[c - 'a'];
         }
 
         var sum = freq.Sum(Math.Abs);
+        
         return sum;
     }
 }
