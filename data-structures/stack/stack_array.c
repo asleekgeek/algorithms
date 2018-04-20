@@ -4,13 +4,12 @@
 int stack[MAXSIZE];     
 int top = -1;            
 
-int peek() 
-{
+int peek() {
    return stack[top];
 }
 
-int pop() 
-{
+int pop() {
+	
    int data;
 	
    if(top != -1) 
@@ -24,18 +23,17 @@ int pop()
    return -1;
 }
 
-void push(int data) 
-{
-   if(top != MAXSIZE) 
-   {
+void push(int data) {
+	
+   if(top != MAXSIZE) {
       stack[++top] = data;
    } else {
       printf("Could not insert data, Stack is full.\n");
    }
 }
 
-int main() 
-{
+int main() {
+	
    // push
    push(3);
    push(5);
