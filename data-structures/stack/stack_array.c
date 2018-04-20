@@ -12,8 +12,7 @@ int pop() {
 	
    int data;
 	
-   if(top != -1) 
-   {
+   if(top != -1) {
       data = stack[top--];
       return data;
    } else {
