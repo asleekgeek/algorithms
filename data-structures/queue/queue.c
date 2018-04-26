@@ -9,8 +9,8 @@ typedef struct queue_node {
 QueueNode *first = NULL;
 QueueNode *last = NULL;
 
-QueueNode *new_queue_node(void *data) 
-{
+QueueNode *new_queue_node(void *data) {
+	
 	QueueNode *new_node = (QueueNode*) malloc(sizeof(QueueNode));
 
 	if (new_node == NULL) {
@@ -23,29 +23,27 @@ QueueNode *new_queue_node(void *data)
 	return new_node;
 }
 
-int enqueue(void *data)
-{
+int enqueue(void *data) {
+	
 	QueueNode *new_node = new_queue_node(data);
 
 	if (new_node == NULL) {
 		return 0;
 	}
 
-	if(first == NULL && last == NULL)
-    {
+	if(first == NULL && last == NULL) {
 		first = last = new_node;
 		return 1;
 	}
 
 	last -> next = new_node;
-    last = new_node;
+    	last = new_node;
 	return 1;
 }
 
-void *dequeue() 
-{
-	if (first == NULL) 
-	{
+void *dequeue() {
+	
+	if (first == NULL) {
 		return NULL;
 	}
 
@@ -58,13 +56,12 @@ void *dequeue()
 	return data;
 }
 
-void *peek() 
-{
+void *peek() {
    return first->data;
 }
 
-int main() 
-{
+int main() {
+	
 	int a = 1;
 	float b = 2.3;
 	char c[] = "Hi from the queue!";
@@ -79,17 +76,16 @@ int main()
 	// pop
 	printf("Elements: \n");
 
-    int a_queued = *((int*) dequeue());
+    	int a_queued = *((int*) dequeue());
 	printf("%d\n", a_queued);
 
 	float b_queued = *((float*) dequeue());
 	printf("%f\n", b_queued);
 
-    char *c_queued = (char*) dequeue();
+    	char *c_queued = (char*) dequeue();
 	printf("%s\n", c_queued);
 
-	if (dequeue() == NULL) 
-	{
+	if (dequeue() == NULL) {
 		printf("Unable to dequeue from empty queue\n");
 	}
 
