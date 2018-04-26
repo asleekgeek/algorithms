@@ -35,11 +35,10 @@ using System.Collections.Generic;
 
 class Brackets {
 
-    static void Main(String[] args) 
-    {
+    static void Main(String[] args) {
+        
         int t = Convert.ToInt32(Console.ReadLine());
-        for(int a0 = 0; a0 < t; a0++)
-        {
+        for(int a0 = 0; a0 < t; a0++) {
             string expression = Console.ReadLine();
 
             bool result = IsBalanced(expression);
@@ -50,19 +49,15 @@ class Brackets {
         Console.ReadKey();
     }
 
-    private static bool IsBalanced(string expression)
-    {
+    private static bool IsBalanced(string expression) {
+        
         var openedBracketsList = new List<char> {'{', '(', '['};
         Stack<char> stack = new Stack<char>();
 
-        foreach (var c in expression)
-        {
-            if (openedBracketsList.Contains(c))
-            {
+        foreach (var c in expression) {
+            if (openedBracketsList.Contains(c)) {
                 stack.Push(c);
-            }
-            else if(!stack.IsEmpty())
-            {
+            } else if(!stack.IsEmpty()) {
                 var openedBracket = stack.Pop();
 
                 switch (openedBracket)
