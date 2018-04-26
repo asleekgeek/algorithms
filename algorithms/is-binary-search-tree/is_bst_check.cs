@@ -17,13 +17,11 @@
 */
 
 
-public bool IsBinarySearchTree(Node<T> root)  
-{
+public bool IsBinarySearchTree(Node<T> root) {
 	return is_bst_check(node, Integer.MIN_VALUE, Integer.MAX_VALUE);
 }
 
-private bool is_bst_check(Node<T> root, int min, int max)
-{
+private bool is_bst_check(Node<T> root, int min, int max) {
 	if (root == null)
 		return true;
 
