@@ -1,7 +1,18 @@
+/*
+* 
+* Bojan Skrchevski 2018-04-27
+*
+* Quicksort algorithm implementation.
+* 
+* Implemented by using Lomuto partition scheme.
+* This scheme chooses a pivot that is typically the last element in the array.
+* 
+* 
+*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 class QuickSortList
 {

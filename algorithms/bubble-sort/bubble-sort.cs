@@ -1,3 +1,15 @@
+/*
+* 
+* Bojan Skrchevski 2018-04-27
+*
+* Bubble sort algorithm implementation.
+* 
+* BubbleSortRecursive - recursively calls until sorted
+* BubbleSortIterative - loops in a do-while loop until sorted
+* 
+* 
+*/
+
 using System;
 
 class BubbleSort

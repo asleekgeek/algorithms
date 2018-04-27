@@ -1,3 +1,13 @@
+/*
+* 
+* Bojan Skrchevski 2018-04-27
+*
+* Merge sort algorithm implementation.
+* 
+* 
+*/
+
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
