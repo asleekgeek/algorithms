@@ -13,13 +13,13 @@ class QuickSortList
         }
 
         var pivot = number_of_elements - 1;
-        var pivotValue = list[pivot];
+        var pivot_value = list[pivot];
         var left = new List<int>();
         var right = new List<int>();
 
         for (int i = 0; i < number_of_elements; i++) {
             if (i != pivot) {
-                if (list[i] < pivotValue) {
+                if (list[i] < pivot_value) {
                     left.Add(list[i]);
                 } else {
                     right.Add(list[i]);
@@ -28,7 +28,7 @@ class QuickSortList
         }
 
         var merged = QuickSort(left);
-        merged.Add(pivotValue);
+        merged.Add(pivot_value);
         merged.AddRange(QuickSort(right));
         return merged;
     }
