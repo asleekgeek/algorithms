@@ -13,8 +13,8 @@ using System.Collections.Generic;
 
 class MergeSortAlgorithm
 {
-    static int[] MergeSort(int[] array) 
-    {   
+    static int[] MergeSort(int[] array) {
+        
         if(array.Length <= 1) {
             return array;
         }
@@ -26,8 +26,8 @@ class MergeSortAlgorithm
         return Merge(left, right);
     }
 
-    static int[] MergeSort(int[] array, int start, int end) 
-    {
+    static int[] MergeSort(int[] array, int start, int end) {
+        
         if(array.Length <= 1) {
             return array;
         }
@@ -39,8 +39,8 @@ class MergeSortAlgorithm
         return Merge(left, right);
     }
 
-    static int[] Merge(int[] left, int[] right)
-    {
+    static int[] Merge(int[] left, int[] right) {
+        
         List<int> result = new List<int>();
         List<int> lefty = new List<int>(left);
         List<int> righty = new List<int>(right);
