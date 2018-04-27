@@ -5,8 +5,8 @@ using System.Text;
 
 class QuickSortList
 {
-    private static List<int> QuickSort(List<int> list)
-    {
+    private static List<int> QuickSort(List<int> list) {
+        
         int number_of_elements = list.Count();
         if (number_of_elements < 2) {
             return list;
@@ -33,8 +33,8 @@ class QuickSortList
         return merged;
     }
 
-    static void Main(String[] args) 
-    {
+    static void Main(String[] args) {
+        
         string[] a_temp = Console.ReadLine().Split(' ');
         int[] array = Array.ConvertAll(a_temp, Int32.Parse);
 
