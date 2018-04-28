@@ -5,7 +5,7 @@
   Instructions to find your way:
   - I tried to separate each data structure and algorithm in separate folders, they resemble the structure of the map below
 
-  ## Fundamental Data Structures
+  ## Data Structures
      - Stack (implementation with arrays and linked lists in C / implementation with generic type in C# )
      - Queue (implementation with arrays and linked lists in C / implementation with generic type in C#)
      - Binary Search Tree (basic generic implementation in C#)
