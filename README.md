@@ -20,6 +20,7 @@
      - Prime numbers - basic algorithm for finding prime numbers (implementation in C#)
    #### Sorting
      - Bubble sort (implementation in C# / recursive and iterative)
+     - Selection sort (implementation in C#)
      - Merge Sort (implementation in C and C# (using List<T>))
      - Quicksort (implementation in C# with List<int>)
      
