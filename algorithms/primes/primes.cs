@@ -3,8 +3,6 @@
   * Bojan Skrchevski 2018-03-22
   *
   * A very simple prime numbers algorithm.
-  * 
-  * Originaly posted on HackerRank: https://www.hackerrank.com/challenges/ctci-big-o/problem
   *
   */
 
@@ -18,6 +16,7 @@
     }
     
     static bool isPrime(int n) {
+      
         if (n < 2) {
             return false;
         } else if (n == 2) {
