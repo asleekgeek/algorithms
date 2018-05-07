@@ -4,6 +4,12 @@
   *
   * A very simple prime numbers algorithm.
   *
+  * For each p(input) numbers determine if the number is prime or not.
+  *
+  * Input: 
+  * p - number of inputs
+  * a0 - number to check
+  *
   */
 
   static void Main(String[] args) {
