@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-#define MAXSIZE 64     
-int stack[MAXSIZE];     
-int top = -1;            
+#define MAXSIZE 64
+
+int stack[MAXSIZE];
+int top = -1;       
 
 int peek() {
    return stack[top];
 }
 
 int pop() {
-	
    int data;
 	
    if(top != -1) {
@@ -23,7 +23,6 @@ int pop() {
 }
 
 void push(int data) {
-	
    if(top != MAXSIZE) {
       stack[++top] = data;
    } else {

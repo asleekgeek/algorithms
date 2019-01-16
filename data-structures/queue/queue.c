@@ -1,3 +1,10 @@
+/*
+*
+* Implementation of a queue data structure in C
+* 
+* 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

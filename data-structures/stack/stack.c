@@ -18,7 +18,6 @@ typedef struct stack_node {
 StackNode *top = NULL;
 
 StackNode* new_stack_node(void *data) {
-	
 	StackNode *new_node = (StackNode*) malloc(sizeof(StackNode));
 
 	if (new_node == NULL) {
@@ -32,7 +31,6 @@ StackNode* new_stack_node(void *data) {
 }
 
 int push(void *data) {
-	
 	StackNode *new_node = new_stack_node(data);
 
 	if (new_node == NULL) {
@@ -45,8 +43,7 @@ int push(void *data) {
 	return 1;
 }
 
-void* pop() 
-{
+void* pop() {
 	if (top == NULL) {
 		return NULL;
 	}
