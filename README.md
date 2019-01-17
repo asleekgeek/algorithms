@@ -20,8 +20,8 @@
      - Binary Search Tree - check if a binary tree is also a binary serach tree (C# using Binary Search Tree from above)
      - Prime numbers - basic algorithm for finding prime numbers (C#)
    #### Sorting
-     - Bubble sort (implementation in C# / recursive and iterative)
-     - Selection sort (implementation in C#)
-     - Merge Sort (implementation in C and C# (using List<T>))
-     - Quicksort (implementation in C# with List<int>)
+     - Bubble sort (C# / recursive and iterative)
+     - Selection sort (C#)
+     - Merge Sort (C and C# (using List<T>))
+     - Quicksort (C# with List<int>)
      
